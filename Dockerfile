@@ -3,5 +3,7 @@ FROM wordpress:latest
 
 WORKDIR /var/www/html
 
+VOLUME ["/wp-data"]
+
 #Copy WP Contents to workdir
 COPY ./wp-content ./wp-content
